@@ -1,11 +1,11 @@
-# homebrew-tools
-Homebrew formulae for installing Jozu's apps and tools.
+# homebrew-kitops
+Homebrew Tap for KitOps CLI
 
 ## How To Use
 
-### Add repository:
+### Add the Homebrew Tap for KitOps CLI:
 ```bash
-brew tap jozu-ai/tools
+brew tap brett-hodges/kitops
 ```
 
 ### Install KitOps CLI:
@@ -13,7 +13,21 @@ brew tap jozu-ai/tools
 brew install kitops
 ```
 
-### Upgrade the KitOps CLI to the latest versions:
+### Test KitOps CLI Installation:
+```bash
+kit version
+```
+
+### Upgrade KitOps CLI to the latest versions:
 ```bash
 brew upgrade kitops
 ```
+
+### Uninstall KitOps CLI
+```bash
+brew uninstalll kitops
+```
+
+### Remove the Homebrew Tap for KitOps CLI
+```bash
+brew untap brett-hodges/kitops
