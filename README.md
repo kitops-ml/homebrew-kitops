@@ -5,7 +5,7 @@ Homebrew Tap for KitOps CLI
 
 ### Add the Homebrew Tap for KitOps CLI:
 ```bash
-brew tap brett-hodges/kitops
+brew tap jozu-ai/kitops
 ```
 
 ### Install KitOps CLI:
@@ -25,9 +25,9 @@ brew upgrade kitops
 
 ### Uninstall KitOps CLI
 ```bash
-brew uninstalll kitops
+brew uninstall kitops
 ```
 
 ### Remove the Homebrew Tap for KitOps CLI
 ```bash
-brew untap brett-hodges/kitops
+brew untap jozu-ai/kitops
