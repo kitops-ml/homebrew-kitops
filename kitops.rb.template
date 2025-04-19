@@ -2,7 +2,8 @@ class Kitops < Formula
   desc "Packaging and versioning system for AI/ML projects"
   homepage "https://KitOps.ml"
   license "Apache-2.0"
-
+  version "@@version"
+ 
   on_macos do
     on_arm do
       url @@darwin-arm64
