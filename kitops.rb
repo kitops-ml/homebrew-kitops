@@ -1,8 +1,8 @@
 class Kitops < Formula
   desc "Packaging and versioning system for AI/ML projects"
   homepage "https://KitOps.ml"
-  license "Apache-2.0"
   version "1.5.0"
+  license "Apache-2.0"
 
   on_macos do
     on_arm do
@@ -13,7 +13,6 @@ class Kitops < Formula
       url "https://github.com/kitops-ml/kitops/releases/download/v1.5.0/kitops-darwin-x86_64.tar.gz"
       sha256 "6aed63e35000537b12dea00396657e574db1d590bf1abeec548be935a68474ee"
     end
-
   end
 
   on_linux do
