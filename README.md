@@ -1,5 +1,7 @@
 # homebrew-kitops
-Homebrew Tap for [KitOps](https://github.com/jozu-ai/kitops) CLI
+Homebrew Tap for [KitOps](https://github.com/kitops-ml/kitops) CLI.
+
+Please file bugs, enhancements, or other issues in [the main KitOps repository](https://github.com/kitops-ml/kitops).
 
 ## How To Use
 
