@@ -1,33 +1,33 @@
 class Kitops < Formula
   desc "Packaging and versioning system for AI/ML projects"
   homepage "https://KitOps.ml"
-  version "1.7.0"
+  version "1.8.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/kitops-ml/kitops/releases/download/v1.7.0/kitops-darwin-arm64.tar.gz"
-      sha256 "5db4b42ff9299a0dd9ca50cf50f6db952dc8d4104f2d5fe8c800e3c7befe327a"
+      url "https://github.com/kitops-ml/kitops/releases/download/v1.8.0/kitops-darwin-arm64.tar.gz"
+      sha256 "094bd367f3d0d9171de184626e6a133712aaaaa56089917c460592a9e9b581f6"
     end
     on_intel do
-      url "https://github.com/kitops-ml/kitops/releases/download/v1.7.0/kitops-darwin-x86_64.tar.gz"
-      sha256 "51f03dcf42cf3f9196356ecf82ab34ca981e4edc2e0c13483e45cab75625b914"
+      url "https://github.com/kitops-ml/kitops/releases/download/v1.8.0/kitops-darwin-x86_64.tar.gz"
+      sha256 "b6ffd106912f62f47e8fd814b7e571bcb80c9bde89aafc55bdc1f8938cbc7d21"
     end
 
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kitops-ml/kitops/releases/download/v1.7.0/kitops-linux-arm64.tar.gz"
-      sha256 "24dec23203c3735cadd1598e579bb25d456a833695ee41b10203f05de6a3d51b"
+      url "https://github.com/kitops-ml/kitops/releases/download/v1.8.0/kitops-linux-arm64.tar.gz"
+      sha256 "36b08156908dca24b2e16d0ef2dd9571e0439eb22f326056ddb11a861690f21d"
     end
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kitops-ml/kitops/releases/download/v1.7.0/kitops-linux-x86_64.tar.gz"
-        sha256 "2d43dc391ae850bbc15e423782d05019aea3659a611e42786f8c2a7df1820b06"
+        url "https://github.com/kitops-ml/kitops/releases/download/v1.8.0/kitops-linux-x86_64.tar.gz"
+        sha256 "0a55cd3012dbd637d87990e1c3924e0873cb8113e5112d24c3ad3ae2a8611240"
       else
-        url "https://github.com/kitops-ml/kitops/releases/download/v1.7.0/kitops-linux-i386.tar.gz"
-        sha256 "764dedfb5371c0b07203daec7746125f362d98312514caf2702bc4177b9bc3a2"
+        url "https://github.com/kitops-ml/kitops/releases/download/v1.8.0/kitops-linux-i386.tar.gz"
+        sha256 "f724db1ddd82e0fdafcbee92e3049cf9612a0507c57a77644f8da4ded5492f81"
       end
     end
   end
@@ -37,7 +37,7 @@ class Kitops < Formula
   end
 
   test do
-    expected_version = "Version: 1.7.0"
+    expected_version = "Version: 1.8.0"
     actual_version = shell_output("#{bin}/kit version").strip
     assert_match expected_version, actual_version
   end
