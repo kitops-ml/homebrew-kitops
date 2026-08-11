@@ -10,6 +10,8 @@ BEGIN {
   # (intended to be homebrew-metadata.txt)
   shas[$3]=$1;
   urls[$3]=$2;
+  # Rewrite GitHub release URLs to go through Scarf for download tracking
+  gsub("https://github.com/kitops-ml/kitops/releases/download/", "https://kitops.gateway.scarf.sh/", urls[$3]);
   version[$3]=$4;
 }
 
